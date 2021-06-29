@@ -20,11 +20,7 @@ class PostsController < ApplicationController
   private
 
   def timeline_posts
-<<<<<<< HEAD
-    @timeline_posts = current_user.timelineposts
-=======
     @timeline_posts = current_user.timeline_display
->>>>>>> 26237038bb83691be4be8992b770d0feb3f380ec
   end
 
   def post_params

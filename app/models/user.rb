@@ -32,12 +32,7 @@ class User < ApplicationRecord
     friends.include?(user)
   end
 
-<<<<<<< HEAD
-  def timelineposts
-    Post.where(user: (friends.to_a << self));
-=======
   def timeline_display
     Post.where(user: (friends) << self)
->>>>>>> 26237038bb83691be4be8992b770d0feb3f380ec
   end
 end
